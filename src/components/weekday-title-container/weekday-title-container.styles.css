@@ -1,0 +1,11 @@
+.day-names-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border-style: solid;
+  border-width: 1px;
+  background-color: #ffc759;
+  margin: 0px 10px 0px 10px;
+  border-radius: 15px 15px 0px 0px;
+  width: 450px;
+  user-select: none;
+}

@@ -1,0 +1,8 @@
+body{
+    overscroll-behavior-y: none;
+}
+
+.calendar-container{
+display: grid;
+justify-content: center;
+}

@@ -1,0 +1,46 @@
+.month-year-container{
+    display: grid;
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 470px;
+    margin-bottom: 10px;
+
+    user-select: none;
+}
+
+.current-month-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: 30px;
+}
+
+.current-year-container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px;
+    margin-top: 20px;
+}
+
+.month-toggler{
+    color: #FFC759;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+.month-toggler:hover{
+    color: #FF7B9C;
+}
+
+.year-toggler{
+    color: #FFC759;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.year-toggler:hover{
+    color: #FF7B9C;
+}
