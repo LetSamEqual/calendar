@@ -69,8 +69,9 @@ const DaysInMonth = ({
     if (date == firstDateSelected) {
       return "days selected";
     } else if (date >= firstDateSelected && date <= secondDateSelected) {
-
       return "days selected";
+    } else if (date < firstDateSelected) {
+      return "days-last-next-month disabled";
     } else {
       return "days";
     }
@@ -81,17 +82,19 @@ const DaysInMonth = ({
       return "days-last-next-month selected";
     } else if (date >= firstDateSelected && date <= secondDateSelected) {
       return "days-last-next-month selected";
+    } else if (date < firstDateSelected) {
+      return "days-last-next-month disabled";
     } else {
       return "days-last-next-month";
     }
-  }
+  };
 
   // if date = firstDateSelected => classname = "days selected"
   // if date >= firstDateSelected => classname = "days selected"
   // else classname = 'days'
 
   return (
-    <div className='day-container'>
+    <div className="day-container">
       {prevMonthDaysToDisplay.map((day) => {
         const date = new Date(year, month - 1, day);
 
@@ -126,7 +129,7 @@ const DaysInMonth = ({
 
         return (
           <div
-          className={changeClassnamePrevNextMonth(date)}
+            className={changeClassnamePrevNextMonth(date)}
             key={day}
             onClick={() => carpeDiem(date)}
           >

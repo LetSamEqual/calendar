@@ -1,54 +1,53 @@
 .day-container {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    border-style: solid;
-    border-width: 1px;
-    margin: 0px 10px 0px 10px;
-    width: 450px;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    user-select: none;
-    background-color: #607196;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border-style: solid;
+  border-width: 1px;
+  margin: 0px 10px 0px 10px;
+  width: 450px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  user-select: none;
+  background-color: #607196;
 }
 
 .day-container .days {
-    cursor: pointer;
-    color: #E8E9ED;
-
+  cursor: pointer;
+  color: #e8e9ed;
 }
 
-
-
-.day-container .days:hover{
-    background-color: #BABFD1;
-    color: black;
+.day-container .days:hover {
+  background-color: #babfd1;
+  color: black;
 }
 
-.day-container .days:active{
-    background-color: #FF7B9C;
-    color: white;
+.day-container .days:active {
+  background-color: #ff7b9c;
+  color: white;
 }
-
 
 .day-container .days-last-next-month {
-    cursor: pointer;
-    color: rgba(229, 228, 226, 0.446);
+  cursor: pointer;
+  color: rgba(229, 228, 226, 0.446);
 }
 
-.day-container .days-last-next-month:hover{
-    background-color: #BABFD1;
-    color: black;
+.day-container .days-last-next-month:hover {
+  background-color: #babfd1;
+  color: black;
 }
 
-.day-container .days-last-next-month:active{
-    background-color: #FF7B9C;
-    color: white;
+.day-container .days-last-next-month:active {
+  background-color: #ff7b9c;
+  color: white;
 }
-
 
 .day-container .selected {
-    background-color: #FF7B9C;
-    color: white;
+  background-color: #ff7b9c;
+  color: white;
 }
 
+.day-container .disabled {
+  background-color: rgb(197, 197, 197);
+  color: white;
+}
